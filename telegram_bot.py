@@ -1,13 +1,13 @@
 from telethon import TelegramClient, events
 from datetime import datetime
 
-# Vos identifiants API Telegram (à obtenir sur https://my.telegram.org/auth)
-api_id = 'VOTRE_API_ID'
-api_hash = 'VOTRE_API_HASH'
-bot_token = 'VOTRE_BOT_TOKEN'
+# Vos identifiants API Telegram
+api_id = "26773187"
+api_hash = "8e7bee094423bdab3c3fba3a33064022"
+bot_token = '8024994242:AAESzFYndmg-Eo5Tdg3aJP06WZg4wsYAE0c'
 
-# L'ID de votre canal (doit être un nombre, par exemple: -1001234567890)
-CANAL_ID = -100  # Remplacez par votre ID de canal (gardez le -100 au début)
+# L'ID de votre canal
+CANAL_ID = -1002096587825
 
 # Le footer que vous souhaitez ajouter
 FOOTER = """
