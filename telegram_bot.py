@@ -2,9 +2,9 @@ from telethon import TelegramClient, events
 from datetime import datetime
 
 # Vos identifiants API Telegram (à obtenir sur https://my.telegram.org/auth)
-api_id = 'VOTRE_API_ID'
-api_hash = 'VOTRE_API_HASH'
-bot_token = 'VOTRE_BOT_TOKEN'
+api_id = "26773187"  # Remplacez par votre API_ID
+api_hash = "8e7bee094423bdab3c3fba3a33064022"  # Remplacez par votre API_HASH
+bot_token = '8024994242:AAESzFYndmg-Eo5Tdg3aJP06WZg4wsYAE0c'
 
 # Le footer que vous souhaitez ajouter
 FOOTER = """
@@ -22,7 +22,7 @@ client = TelegramClient('bot_session', api_id, api_hash).start(bot_token=bot_tok
 async def start(event):
     await event.respond('Bot démarré! Je vais ajouter automatiquement le footer à vos messages.')
 
-@client.on(events.NewMessage(chats='VOTRE_CANAL_ID'))
+@client.on(events.NewMessage(chats='-1002096587825'))
 async def add_footer(event):
     # Vérifie si le message ne contient pas déjà le footer
     if FOOTER not in event.message.message:
